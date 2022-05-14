@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="item" placeholder="Novo item">
+    <button onclick="inserirItem()">Inserir</button>
+    <input type="number" id="indice" placeholder="Indice do item removido">
+    <button onclick="removerItem()">Remover</button>
+    <ul id="Minha lista"></ul>
+    <script>
+        function inserirItem(){
+            const item = document.getElementById("item").value 
+            let novoItem = document.createElement("li")
+            let noTexto = document.createTextNobe(item);
+            novoItem.appendChild(noTexto)
+            let lista = document.getElementById("Minha lista")
+            lista.inserirBefore(novoItem,lista.children[0])
+        }
+        function removerItem(){
+            let indice = document.getElementById("indice").value 
+            const lista = document.getElementById("Minha lista")
+            indice = Number(indice)
+            lista.removeChild(lista.children[indice])
+        }
+    </script>
+</body>
+</html>

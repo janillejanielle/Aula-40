@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Zebra</title>
+<style>
+    .zebraon{background-color:silver}
+</style>
+<script>
+    window.onload=function(){
+        var zebra=document.querySelectorAll('.zebra tbody tr')
+        for(var i=0;i<zebra.length;i+=2)
+        zebra[i].className='zebraon'
+    }
+</script>
+</head>
+
+<body>
+<table class="zebra">
+    <thead><tr>
+        <th>Vendedor</th> <th>Total</th>
+      </tr></thead>
+    <tbody><tr>
+        <td>Manoel</td> <td>12.300,00</td>
+      </tr><tr>
+          <td>Joaquim</td> <td>21.300,00</td>
+      </tr><tr>
+          <td>Maria</td> <td>13.200,00</td>
+      </tr><tr>
+          <td>Marta</td> <td>32.100;00</td>
+      </tr><tr>
+          <td>Antonio</td> <td>23.100,00</td>
+      </tr><tr>
+          <td>Pedro</td> <td>31.200,00</td>
+      </tr></tbody>
+</table>    
+</body>
+</html>

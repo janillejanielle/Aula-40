@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <ul id="Minha lista">
+        <li>Café</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+        <li>Pão francês</li>
+    </ul>
+
+    <script>
+
+        let notoItem = document.createElement("li")
+
+        let noTexto = document.createTextNode("Presunto");
+
+        novoItem.appenChild(noTexto)
+
+        let lista = document.getElementById("Minha lista")
+
+        lista.insertBefore(novoItem,lista.children[0])// firstchild / lastchild
+
+    </script>
+    
+</body>
+</html>
